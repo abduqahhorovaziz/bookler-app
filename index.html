@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="section font-open h-[491px] pt-[34px] pl-10 relative"
+    <header class="section flex justify-between font-open h-[491px] pt-[34px] pl-10 pr-[60px] relative "
         style="background: linear-gradient(168.05deg, #023B96 5.04%, #022357 91.26%);">
         <aside id="sidebar"
             class="w-[240px] h-[709px] overflow-hidden rounded-xl bg-[#DAE1FB] shadow-sidebar-shadow backdrop-blur-[13.5914px] pt-[16px] pl-[24px] pr-[20px] pb-[20px] flex flex-col relative duration-300 ease"
@@ -27,7 +27,8 @@
                     <a id="logoBrand" href="#">
                         <img src="./assets/img/logo.svg" alt="brand logo">
                     </a>
-                    <div id="toggleBtn" class="w-[18px] h-[18px] flex flex-col items-end justify-center gap-y-[3px] cursor-pointer">
+                    <div id="toggleBtn"
+                        class="w-[18px] h-[18px] flex flex-col items-end justify-center gap-y-[3px] cursor-pointer">
                         <span class="w-[13px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
                         <span class="w-[13px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
                         <span class="w-[18px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
@@ -64,7 +65,8 @@
                     <li class="mt-[7px]">
                         <a href="#"
                             class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
-                            <img src="./assets/img/icons/sidebar/business.svg" alt="Business" class="mr-[13px] nav-icon">
+                            <img src="./assets/img/icons/sidebar/business.svg" alt="Business"
+                                class="mr-[13px] nav-icon">
                             <p class="nav-item">
                                 Business
                             </p>
@@ -93,7 +95,8 @@
 
             <div class="w-full h-[152px] mt-auto pl-[6px] pr-[10px] pb-5 flex flex-col justify-end">
                 <a href="#" class="w-[180px] absolute flex items-center bg-white rounded-full py-[7px] px-[10px]">
-                    <div class="w-[30px] h-[30px] rounded-full flex items-center justify-center" style="background: linear-gradient(214.51deg, #D10015 13.77%, #FF4369 83.58%);">
+                    <div class="w-[30px] h-[30px] rounded-full flex items-center justify-center"
+                        style="background: linear-gradient(214.51deg, #D10015 13.77%, #FF4369 83.58%);">
                         <img src="./assets/img/icons/sidebar/get-premium.svg" alt="get">
                     </div>
                     <div class="ml-3">
@@ -107,7 +110,41 @@
                 <img class="absolute bottom-0 left-0 w-[240px]" src="./assets/img/sidebar/cloud.png" alt="cloud">
             </div>
         </aside>
+
+        <div class="h-[40px] flex items-center">
+            <button
+                class="flex items-center py-[5px] pl-[6px] pr-[14px] bg-[#6c86b133] backdrop-blur-[5px] rounded-full text-[#E2E8F2] font-semibold text-[12px] leading-[16px] mr-[21px] hover:bg-[#c1c4c833] duration-200 ease-in">
+                <span class="mr-[10px]">
+                    <img src="./assets/img/header/become.svg" alt="become">
+                </span>
+                Become a Partner
+                <i class="fa-solid fa-chevron-down ml-[14px] text-[8px]"></i>
+            </button>
+
+            <button
+                class="flex items-center py-[5px] pl-[6px] pr-[14px] bg-[#6c86b133] backdrop-blur-[5px] rounded-full text-[#E2E8F2] font-semibold text-[12px] leading-[16px] hover:bg-[#c1c4c833] duration-200 ease-in">
+                <span class="mr-[10px]">
+                    <img src="./assets/img/header/user.png" alt="user">
+                </span>
+                Mansurul Haque
+                <i class="fa-solid fa-chevron-down ml-[14px] text-[8px]"></i>
+            </button>
+        </div>
     </header>
+
+    <main class="section bg-[#F0F4F6] font-open relative">
+        <section class="flex justify-end absolute w-full top-[-282px]">
+            <div class="container">
+                <div>
+                    <div
+                        class="group w-[68px] h-[73px] flex flex-col items-center py-[11px] bg-transparent hover:bg-[#0A6ADA]  cursor-pointer duration-150 ease-in rounded-lg">
+                        <img class="mb-[9px] group-hover:mb-[11px]" src="./assets/img/tabs/plane.svg" alt="plane">
+                        <p class="text-white uppercase font-semibold text-[12px] leading-4 tracking-[0.002em]">Flights</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/main.js"></script>
 </body>
 
