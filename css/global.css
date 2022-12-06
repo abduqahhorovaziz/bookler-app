@@ -1,0 +1,27 @@
+.section{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.active{
+    width: 80px;
+    align-items: center;
+}
+
+.burger-active{
+    align-items: flex-start;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
