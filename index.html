@@ -2,150 +2,433 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 6 | SomeName</title>
-    <link rel="stylesheet" href="./dist/tailwind.css">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 6 | SomeName</title>
+  <link rel="stylesheet" href="./dist/tailwind.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="section flex justify-between font-open h-[491px] pt-[34px] pl-10 pr-[60px] relative "
-        style="background: linear-gradient(168.05deg, #023B96 5.04%, #022357 91.26%);">
+  <div class="relative w-full h-[491px] bg-[#F0F4F6]  ">
+    <header id="header" class="fixed top-0 w-full flex font-open h-[491px] pt-[34px] pl-10 pr-[60px] duration-300 ease"
+      style="background: linear-gradient(168.05deg, #023B96 5.04%, #022357 91.26%);">
+      <div class="section flex justify-between relative">
         <aside id="sidebar"
-            class="w-[240px] h-[709px] overflow-hidden rounded-xl bg-[#DAE1FB] shadow-sidebar-shadow backdrop-blur-[13.5914px] pt-[16px] pl-[24px] pr-[20px] pb-[20px] flex flex-col relative duration-300 ease"
-            style="background: linear-gradient(141.08deg, #0A69DA 32.24%, #0856C8 115.93%, #0231A5 164.9%); ">
-            <nav>
-                <div id="sidebarTop" class="flex items-center justify-between">
-                    <a id="logoBrand" href="#">
-                        <img src="./assets/img/logo.svg" alt="brand logo">
-                    </a>
-                    <div id="toggleBtn"
-                        class="w-[18px] h-[18px] flex flex-col items-end justify-center gap-y-[3px] cursor-pointer">
-                        <span class="w-[13px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
-                        <span class="w-[13px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
-                        <span class="w-[18px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
-                    </div>
-                </div>
-                <ul class="mt-[74px] text-white font-semibold text-[15px] leading-[18px]">
-                    <li>
-                        <a href="#"
-                            class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
-                            <img src="./assets/img/icons/sidebar/home.svg" alt="Home" class="mr-[13px] nav-icon">
-                            <p class="nav-item">
-                                Home
-                            </p>
-                        </a>
-                    </li>
-                    <li class="mt-[7px]">
-                        <a href="#"
-                            class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
-                            <img src="./assets/img/icons/sidebar/wallet.svg" alt="Wallet" class="mr-[13px] nav-icon">
-                            <p class="nav-item">
-                                Wallet
-                            </p>
-                        </a>
-                    </li>
-                    <li class="mt-[7px]">
-                        <a href="#"
-                            class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
-                            <img src="./assets/img/icons/sidebar/booking.svg" alt="Booking" class="mr-[13px] nav-icon">
-                            <p class="nav-item">
-                                Booking
-                            </p>
-                        </a>
-                    </li>
-                    <li class="mt-[7px]">
-                        <a href="#"
-                            class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
-                            <img src="./assets/img/icons/sidebar/business.svg" alt="Business"
-                                class="mr-[13px] nav-icon">
-                            <p class="nav-item">
-                                Business
-                            </p>
-                        </a>
-                    </li>
-                    <li class="mt-[7px]">
-                        <a href="#"
-                            class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
-                            <img src="./assets/img/icons/sidebar/explore.svg" alt="Explore" class="mr-[13px] nav-icon">
-                            <p class="nav-item">
-                                Explore
-                            </p>
-                        </a>
-                    </li>
-                    <li class="mt-[7px]">
-                        <a href="#"
-                            class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
-                            <img src="./assets/img/icons/sidebar/support.svg" alt="Support" class="mr-[13px] nav-icon">
-                            <p class="nav-item">
-                                Support
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="w-full h-[152px] mt-auto pl-[6px] pr-[10px] pb-5 flex flex-col justify-end">
-                <a href="#" class="w-[180px] absolute flex items-center bg-white rounded-full py-[7px] px-[10px]">
-                    <div class="w-[30px] h-[30px] rounded-full flex items-center justify-center"
-                        style="background: linear-gradient(214.51deg, #D10015 13.77%, #FF4369 83.58%);">
-                        <img src="./assets/img/icons/sidebar/get-premium.svg" alt="get">
-                    </div>
-                    <div class="ml-3">
-                        <h4 class="text-[11px] leading-[15px] text-[#0B1023] opacity-90 font-bold">Get Premium</h4>
-                        <p class="text-[10px] leading-[14px] text-[#0B1023] opacity-60">$39/m</p>
-                    </div>
-                    <div class="ml-auto">
-                        <img src="./assets/img/icons/sidebar/right-arrow-play.svg" alt="right">
-                    </div>
-                </a>
-                <img class="absolute bottom-0 left-0 w-[240px]" src="./assets/img/sidebar/cloud.png" alt="cloud">
+          class="sticky top-[34px] w-[240px] h-[709px] overflow-hidden rounded-xl bg-[#DAE1FB] shadow-sidebar-shadow backdrop-blur-[13.5914px] pt-[16px] pl-[24px] pr-[20px] pb-[20px] flex flex-col duration-300 ease z-50"
+          style="background: linear-gradient(141.08deg, #0A69DA 32.24%, #0856C8 115.93%, #0231A5 164.9%); ">
+          <nav>
+            <div id="sidebarTop" class="flex items-center justify-between">
+              <a id="logoBrand" href="#">
+                <img src="./assets/img/logo.svg" alt="brand logo">
+              </a>
+              <div id="toggleBtn"
+                class="w-[18px] h-[18px] flex flex-col items-end justify-center gap-y-[3px] cursor-pointer">
+                <span class="w-[13px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
+                <span class="w-[13px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
+                <span class="w-[18px] h-[2px] rounded-[2px] block bg-[#ffffffcc]"></span>
+              </div>
             </div>
+            <ul class="mt-[74px] text-white font-semibold text-[15px] leading-[18px]">
+              <li>
+                <a href="#"
+                  class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
+                  <img src="./assets/img/icons/sidebar/home.svg" alt="Home" class="mr-[13px] nav-icon">
+                  <p class="nav-item">
+                    Home
+                  </p>
+                </a>
+              </li>
+              <li class="mt-[7px]">
+                <a href="#"
+                  class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
+                  <img src="./assets/img/icons/sidebar/wallet.svg" alt="Wallet" class="mr-[13px] nav-icon">
+                  <p class="nav-item">
+                    Wallet
+                  </p>
+                </a>
+              </li>
+              <li class="mt-[7px]">
+                <a href="#"
+                  class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
+                  <img src="./assets/img/icons/sidebar/booking.svg" alt="Booking" class="mr-[13px] nav-icon">
+                  <p class="nav-item">
+                    Booking
+                  </p>
+                </a>
+              </li>
+              <li class="mt-[7px]">
+                <a href="#"
+                  class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
+                  <img src="./assets/img/icons/sidebar/business.svg" alt="Business" class="mr-[13px] nav-icon">
+                  <p class="nav-item">
+                    Business
+                  </p>
+                </a>
+              </li>
+              <li class="mt-[7px]">
+                <a href="#"
+                  class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
+                  <img src="./assets/img/icons/sidebar/explore.svg" alt="Explore" class="mr-[13px] nav-icon">
+                  <p class="nav-item">
+                    Explore
+                  </p>
+                </a>
+              </li>
+              <li class="mt-[7px]">
+                <a href="#"
+                  class="nav-link flex items-center py-[10px] px-[19px] rounded-full hover:bg-[#0076FF] transition duration-150 ease-in">
+                  <img src="./assets/img/icons/sidebar/support.svg" alt="Support" class="mr-[13px] nav-icon">
+                  <p class="nav-item">
+                    Support
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="w-full h-[152px] mt-auto pl-[6px] pr-[10px] pb-5 flex flex-col justify-end">
+            <a href="#" class="w-[180px] absolute flex items-center bg-white rounded-full py-[7px] px-[10px]">
+              <div class="w-[30px] h-[30px] rounded-full flex items-center justify-center"
+                style="background: linear-gradient(214.51deg, #D10015 13.77%, #FF4369 83.58%);">
+                <img src="./assets/img/icons/sidebar/get-premium.svg" alt="get">
+              </div>
+              <div class="ml-3">
+                <h4 class="text-[11px] leading-[15px] text-[#0B1023] opacity-90 font-bold">Get Premium</h4>
+                <p class="text-[10px] leading-[14px] text-[#0B1023] opacity-60">$39/m</p>
+              </div>
+              <div class="ml-auto">
+                <img src="./assets/img/icons/sidebar/right-arrow-play.svg" alt="right">
+              </div>
+            </a>
+            <img class="absolute bottom-0 left-0 w-[240px]" src="./assets/img/sidebar/cloud.png" alt="cloud">
+          </div>
         </aside>
 
         <div class="h-[40px] flex items-center">
-            <button
-                class="flex items-center py-[5px] pl-[6px] pr-[14px] bg-[#6c86b133] backdrop-blur-[5px] rounded-full text-[#E2E8F2] font-semibold text-[12px] leading-[16px] mr-[21px] hover:bg-[#c1c4c833] duration-200 ease-in">
-                <span class="mr-[10px]">
-                    <img src="./assets/img/header/become.svg" alt="become">
-                </span>
-                Become a Partner
-                <i class="fa-solid fa-chevron-down ml-[14px] text-[8px]"></i>
-            </button>
+          <button
+            class="flex items-center py-[5px] pl-[6px] pr-[14px] bg-[#6c86b133] backdrop-blur-[5px] rounded-full text-[#E2E8F2] font-semibold text-[12px] leading-[16px] mr-[21px] hover:bg-[#c1c4c833] duration-200 ease-in">
+            <span class="mr-[10px]">
+              <img src="./assets/img/header/become.svg" alt="become">
+            </span>
+            Become a Partner
+            <i class="fa-solid fa-chevron-down ml-[14px] text-[8px]"></i>
+          </button>
 
-            <button
-                class="flex items-center py-[5px] pl-[6px] pr-[14px] bg-[#6c86b133] backdrop-blur-[5px] rounded-full text-[#E2E8F2] font-semibold text-[12px] leading-[16px] hover:bg-[#c1c4c833] duration-200 ease-in">
-                <span class="mr-[10px]">
-                    <img src="./assets/img/header/user.png" alt="user">
-                </span>
-                Mansurul Haque
-                <i class="fa-solid fa-chevron-down ml-[14px] text-[8px]"></i>
-            </button>
+          <button
+            class="flex items-center py-[5px] pl-[6px] pr-[14px] bg-[#6c86b133] backdrop-blur-[5px] rounded-full text-[#E2E8F2] font-semibold text-[12px] leading-[16px] hover:bg-[#c1c4c833] duration-200 ease-in">
+            <span class="mr-[10px]">
+              <img src="./assets/img/header/user.png" alt="user">
+            </span>
+            Mansurul Haque
+            <i class="fa-solid fa-chevron-down ml-[14px] text-[8px]"></i>
+          </button>
         </div>
+      </div>
     </header>
+  </div>
 
-    <main class="section bg-[#F0F4F6] font-open relative">
-        <section class="flex justify-end absolute w-full top-[-282px]">
-            <div class="container">
-                <div>
-                    <div
-                        class="group w-[68px] h-[73px] flex flex-col items-center py-[11px] bg-transparent hover:bg-[#0A6ADA]  cursor-pointer duration-150 ease-in rounded-lg">
-                        <img class="mb-[9px] group-hover:mb-[11px]" src="./assets/img/tabs/plane.svg" alt="plane">
-                        <p class="text-white uppercase font-semibold text-[12px] leading-4 tracking-[0.002em]">Flights</p>
-                    </div>
-                </div>
+
+  <main class="bg-[#F0F4F6] min-h-[200vh] font-open">
+    <div class="max-w-[1400px] h-[133px] w-full mx-auto relative">
+      <section class="flex justify-end absolute w-full top-[-300px] pr-[45px]">
+        <div id="tabContainer" class="z-50 max-w-[1030px] px-[15px] w-full duration-300 ease">
+          <div id="tabNav" class="top-[34px] w-full  flex items-center justify-between pr-[83px] mb-5">
+            <div class="flex items-center gap-x-2 tabs">
+
+              <div data-tab-value="#tab_1"
+                class="tab-activee tab-btn group w-[68px]  h-[73px] flex flex-col items-center py-[11px] bg-transparent hover:bg-[#0A6ADA]  cursor-pointer duration-150 ease-in rounded-lg">
+                <img class="mb-[9px] group-hover:translate-y-[-2px] duration-150 ease" src="./assets/img/tabs/plane.svg"
+                  alt="plane">
+                <p class="tab-title text-white uppercase font-semibold text-[12px] leading-4 tracking-[0.002em]">
+                  Flights</p>
+              </div>
+
+              <div data-tab-value="#tab_2"
+                class="tab-btn group w-[68px] h-[73px] flex flex-col items-center py-[11px] bg-transparent hover:bg-[#0A6ADA]  cursor-pointer duration-150 ease-in rounded-lg">
+                <img class="mb-[9px] group-hover:translate-y-[-2px] duration-150 ease" src="./assets/img/tabs/hotel.svg"
+                  alt="plane">
+                <p class="tab-title text-white uppercase font-semibold text-[12px] leading-4 tracking-[0.002em]">
+                  Hotel
+                </p>
+              </div>
+
+              <div data-tab-value="#tab_3"
+                class="tab-btn group w-[68px] h-[73px] flex flex-col items-center py-[11px] bg-transparent hover:bg-[#0A6ADA]  cursor-pointer duration-150 ease-in rounded-lg">
+                <img class="mb-[9px] group-hover:translate-y-[-2px] duration-150 ease" src="./assets/img/tabs/villa.svg"
+                  alt="plane">
+                <p class="tab-title text-white uppercase font-semibold text-[12px] leading-4 tracking-[0.002em]">
+                  Villa
+                </p>
+              </div>
+
+              <div data-tab-value="#tab_4"
+                class="tab-btn group w-[68px] h-[73px] flex flex-col items-center py-[11px] bg-transparent hover:bg-[#0A6ADA]  cursor-pointer duration-150 ease-in rounded-lg">
+                <img class="mb-[9px] group-hover:translate-y-[-2px] duration-150 ease" src="./assets/img/tabs/taxi.svg"
+                  alt="plane">
+                <p class="tab-title text-white uppercase font-semibold text-[12px] leading-4 tracking-[0.002em]">
+                  Taxi
+                </p>
+              </div>
+
             </div>
-        </section>
-    </main>
-    <script src="js/main.js"></script>
+            <img class="airplane duration-300 ease" src="./assets/img/tabs/airplane.png" alt="airplane">
+          </div>
+
+          <div class="tab-content w-full font-open">
+            <div class="tabs__tab tab-active w-full animate-tab duration-300" id="tab_1" data-tab-info>
+              <div class="smallTab fixed top-[117px] hidden w-full h-[85px] py-[15px] pl-[50px] pr-[60px] rounded-2xl bg-white ">
+                <div class="w-full h-full flex items-center gap-x-[30px]">
+                  <div class="w-[102px]">
+                    <p
+                      class="font-semibold text-[11px] leading-[9px] tracking-[0.293333px] uppercase text-[#B8C1DE] opacity-90 ml-[14px] mb-[5px]">
+                      Type</p>
+                    <div class="flex items-center py-[13px] px-[14px] bg-[#191d230d] rounded-full">
+                      <p class="mr-[13px] font-bold text-[14px] leading-[14px] text-[#2E3758] opacity-90">Oneway</p>
+                      <img src="./assets/img/icons/input-tab/chevron-down.svg" alt="down">
+                    </div>
+                  </div>
+                  <div class="w-[181px]">
+                    <p
+                      class="font-semibold text-[11px] leading-[9px] tracking-[0.293333px] uppercase text-[#B8C1DE] opacity-90 ml-[14px] mb-[5px]">
+                      From</p>
+                    <div class="flex items-center py-[13px] px-[14px] bg-[#191d230d] rounded-full">
+                      <p class="mr-[13px] font-bold text-[14px] leading-[14px] text-[#2E3758] opacity-90">Dhaka,Bangladesh</p>
+                    </div>
+                  </div>
+                  <div class="w-[181px]">
+                    <p
+                      class="font-semibold text-[11px] leading-[9px] tracking-[0.293333px] uppercase text-[#B8C1DE] opacity-90 ml-[14px] mb-[5px]">
+                      To</p>
+                    <div class="flex items-center py-[13px] px-[14px] bg-[#191d230d] rounded-full">
+                      <p class="mr-[13px] font-bold text-[14px] leading-[14px] text-[#2E3758] opacity-90">Dilhi, India</p>
+                    </div>
+                  </div>
+                  <div class="w-[120px]">
+                    <p
+                      class="font-semibold text-[11px] leading-[9px] tracking-[0.293333px] uppercase text-[#B8C1DE] opacity-90 ml-[14px] mb-[5px]">
+                      Class</p>
+                    <div class="flex items-center py-[13px] px-[14px] bg-[#191d230d] rounded-full">
+                      <p class="mr-[13px] font-bold text-[14px] leading-[14px] text-[#2E3758] opacity-90">3 Persons </p>
+                      <img src="./assets/img/icons/input-tab/chevron-down.svg" alt="down">
+                    </div>
+                  </div>
+                  <div class="w-[201px]">
+                    <p
+                      class="font-semibold text-[11px] leading-[9px] tracking-[0.293333px] uppercase text-[#B8C1DE] opacity-90 ml-[14px] mb-[5px]">
+                      Departure - Return</p>
+                    <div class="flex items-center py-[13px] px-[14px] bg-[#191d230d] rounded-full">
+                      <p class="mr-[13px] font-bold text-[14px] leading-[14px] text-[#2E3758] opacity-90">21 Aug’19  -  29 Aug’19</p>
+                      <img src="./assets/img/icons/input-tab/calendar.svg" alt="down">
+                    </div>
+                  </div>
+                  <button class="w-[165px] h-[46px] flex items-center justify-center text-[14px] leading-[16px] font-bold tracking-[0.155556px] text-[#FDF1F2] opacity-[0.85] bg-[#DF142D] rounded-full border border-[#DF142D] hover:bg-transparent hover:text-[#DF142D] duration-200 ease-in">
+                    Search Flight
+                  </button>
+                </div>
+              </div>
+
+              <div class="largeTab w-full h-[321px] p-[38px] bg-white rounded-[16px] shadow-tab-shadow">
+                <div
+                  class="flex items-center gap-x-[17px] font-semibold text-[14px] leading-[19px] text-[#353F65] mb-[19px]">
+                  <span
+                    class="block px-[22px] py-[9px] rounded-full bg-[#F0F2F6] duration-200 ease cursor-pointer opacity-90">Oneway</span>
+                  <span
+                    class="block px-[22px] py-[9px] rounded-full hover:bg-[#F0F2F6] duration-200 ease cursor-pointer opacity-90">Round
+                    Trip</span>
+                  <span
+                    class="block px-[22px] py-[9px] rounded-full hover:bg-[#F0F2F6] duration-200 ease cursor-pointer opacity-90">Multy
+                    city</span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between gap-x-[20px]">
+                    <div
+                      class="w-[328px] h-[88px] bg-[#7c829b0d] border border-[#EEF0F4] rounded-lg px-[18px] py-[14px]">
+                      <div class="flex items-center mb-[10px]">
+                        <img src="./assets/img/icons/input-tab/location.svg" class="mr-[2px] w-[12px]" alt="location">
+                        <span class="text-[12px] leading-[12px] text-[#475073] opacity-30 uppercase">To</span>
+                      </div>
+                      <p class="font-bold text-[16px] leading-[100%] tracking-[0.0025em] text-[#2E3758] mb-[10px]">
+                        Dilhi, India</p>
+                      <p class="text-[12px] leading-[20px] text-[#475073] opacity-70">Shuvas
+                        chandra bosu airport</p>
+                    </div>
+                    <div
+                      class="w-[328px] h-[88px] bg-[#7c829b0d] border border-[#EEF0F4] rounded-lg px-[18px] py-[14px]">
+                      <div class="flex items-center mb-[10px]">
+                        <img src="./assets/img/icons/input-tab/location.svg" class="mr-[2px] w-[12px]" alt="location">
+                        <span class="text-[12px] leading-[12px] text-[#475073] opacity-30 uppercase">From</span>
+                      </div>
+                      <p class="font-bold text-[16px] leading-[100%] tracking-[0.0025em] text-[#2E3758] mb-[10px]">
+                        Dhaka, Bangladesh</p>
+                      <p class="text-[12px] leading-[20px] text-[#475073] opacity-70">Usmani
+                        airport, Sylhet</p>
+                    </div>
+                    <div
+                      class="relative w-[229px] h-[88px] bg-[#7c829b0d] border border-[#EEF0F4] rounded-lg px-[18px] pt-[14px]">
+                      <div class="flex items-center mb-[10px]">
+                        <img src="./assets/img/icons/input-tab/class.svg" class="mr-[2px] w-[12px]" alt="location">
+                        <span class="text-[12px] leading-[12px] text-[#475073] opacity-30 uppercase">Class</span>
+                      </div>
+                      <p class="font-bold text-[16px] leading-[100%] tracking-[0.0025em] text-[#2E3758] mb-[10px]">
+                        3 Persons</p>
+                      <div class="flex items-start justify-between cursor-pointer group pb-[14px]">
+                        <p class="text-[12px] leading-[20px] text-[#475073] opacity-70">Business</p>
+                        <img src="./assets/img/icons/input-tab/chevron-down.svg" alt="chevron">
+
+                        <div
+                          class="w-full hidden bg-[#adb0bc] border-[#EEF0F4] rounded-lg absolute left-0 top-[110%] group-hover:block text-white">
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between gap-x-[20px] mt-[16px]">
+                    <div
+                      class="relative w-[248px] h-[88px] bg-[#7c829b0d] border border-[#EEF0F4] rounded-lg px-[18px] py-[14px]">
+                      <div class="flex items-start justify-between cursor-pointer group">
+                        <div class="flex items-center mb-[10px]">
+                          <img src="./assets/img/icons/input-tab/calendar.svg" class="mr-[2px] w-[12px]" alt="location">
+                          <span class="text-[12px] leading-[12px] text-[#475073] opacity-30 uppercase">Departure</span>
+                        </div>
+                        <img src="./assets/img/icons/input-tab/chevron-down.svg" alt="chevron">
+
+                        <div
+                          class="w-full hidden bg-[#adb0bc] border-[#EEF0F4] rounded-lg absolute z-50 left-0 top-[40%] group-hover:block text-white">
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                        </div>
+                      </div>
+                      <p class="font-bold text-[16px] leading-[100%] tracking-[0.0025em] text-[#2E3758] mb-[10px]">
+                        21 Aug’20</p>
+                      <p class="text-[12px] leading-[20px] text-[#475073] opacity-70">Sunday</p>
+                    </div>
+                    <div
+                      class="relative w-[248px] h-[88px] bg-[#7c829b0d] border border-[#EEF0F4] rounded-lg px-[18px] py-[14px]">
+                      <div class="flex items-start justify-between cursor-pointer group">
+                        <div class="flex items-center mb-[10px]">
+                          <img src="./assets/img/icons/input-tab/calendar.svg" class="mr-[2px] w-[12px]" alt="location">
+                          <span class="text-[12px] leading-[12px] text-[#475073] opacity-30 uppercase">return</span>
+                        </div>
+                        <img src="./assets/img/icons/input-tab/chevron-down.svg" alt="chevron">
+
+                        <div
+                          class="w-full hidden bg-[#adb0bc] border-[#EEF0F4] rounded-lg absolute z-50 left-0 top-[40%] group-hover:block text-white">
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                          <p class="py-[8px] hover:bg-slate-100 hover:text-black duration-200 ease px-2">Sub Item</p>
+                        </div>
+                      </div>
+                      <p class="font-bold text-[16px] leading-[100%] tracking-[0.0025em] text-[#2E3758] mb-[10px]">
+                        29 Aug’20</p>
+                      <p class="text-[12px] leading-[20px] text-[#475073] opacity-70">Sunday</p>
+                    </div>
+                    <div
+                      class="relative w-[140px] h-[88px] bg-[#7c829b0d] border border-[#EEF0F4] rounded-lg px-[18px] py-[14px]">
+                      <div class="flex items-start justify-between cursor-pointer group">
+                        <div class="flex items-center mb-[10px]">
+                          <img src="./assets/img/icons/input-tab/calendar.svg" class="mr-[2px] w-[12px]" alt="location">
+                          <span class="text-[12px] leading-[12px] text-[#475073] opacity-30 uppercase">return</span>
+                        </div>
+                      </div>
+                      <p class="font-bold text-[16px] leading-[100%] tracking-[0.0025em] text-[#2E3758] mb-[10px]">
+                        More</p>
+                      <button class="text-[12px] leading-[20px] text-[#475073] opacity-70">
+                        <img src="./assets/img/icons/input-tab/more.svg" alt="more">
+                      </button>
+                    </div>
+                    <button
+                      class="w-[229px] h-[88px] bg-[#DF142D] border border-[#DF142D] rounded-lg flex items-center justify-center text-white uppercase font-extrabold text-[18px] leading-[18px] tracking-[0.01em] hover:bg-transparent hover:text-[#DF142D] duration-200 ease-in">
+                      search flight
+                    </button>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+            </div>
+            <div class="tabs__tab" id="tab_2" data-tab-info>
+              <div class="smallTab fixed top-[117px] hidden w-full  h-[85px] bg-yellow-500 ">
+
+              </div>
+              <div
+                class="largeTab w-full h-[321px] bg-yellow-500 rounded-[16px] shadow-tab-shadow animate-tab duration-300">
+              </div>
+            </div>
+            <div class="tabs__tab" id="tab_3" data-tab-info>
+              <div class="smallTab fixed top-[117px] hidden w-full  h-[85px] bg-red-500 ">
+
+              </div>
+              <div class="w-full h-[321px] bg-red-500 rounded-[16px] shadow-tab-shadow animate-tab duration-300">
+              </div>
+            </div>
+            <div class="tabs__tab" id="tab_4" data-tab-info>
+              <div class="smallTab fixed top-[117px] hidden w-full  h-[85px] bg-green-600 ">
+
+              </div>
+              <div class="w-full h-[321px] bg-green-600 rounded-[16px] shadow-tab-shadow animate-tab duration-300">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="max-w-[1400px] w-full mx-auto overflow-hidden">
+      <div class="max-w-[1000px] ml-auto  w-full flex items-center mr-[60px]">
+        <p class="font-extrabold text-[24px] leading-[33px] tracking-[0.0026em] text-[#282E44]">Special Offer</p>
+        <a class="ml-auto mr-10 font-semibold text-[18px] leading-[25px] text-[#282E44] opacity-50 hover:underline" href="#">View all</a>
+      </div>
+      <div class="max-w-[1060px] w-full ml-auto">
+        <div class="slider">
+          <div class="slider-list">
+              <div class="slider-track">
+                  <div class="slide w-[462px] h-[188px] flex items-center p-6 bg-white">
+                    <div>
+                      <img src="./assets/img/slider/slide-1.jpg" alt="slide">
+                    </div>
+                    <div>
+                        <p>Citytuch</p>
+                        <p>Up to $599 discount</p>
+                        <p>Domestic flight</p>
+
+                        <div>
+                          <p>Cupon: dhshjab09d</p>
+                          <button>Book Now</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+              </div>
+          </div>
+          <div class="slider-arrows">
+              <button type="button" class="prev slider-btn">
+                  <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button type="button" class="next slider-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+              </button>
+          </div>
+      </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

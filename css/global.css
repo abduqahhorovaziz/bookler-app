@@ -1,25 +1,37 @@
-.section{
+.section {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
 
-.container{
+.container {
     max-width: 1030px;
     width: 100%;
     padding: 0 15px;
 }
 
-.active{
+[data-tab-info] {
+    display: none;
+}
+
+.tab-active[data-tab-info] {
+    display: block;
+}
+
+.tab-activee{
+    background-color: #0A6ADA;
+}
+
+.active {
     width: 80px;
     align-items: center;
 }
 
-.burger-active{
+.burger-active {
     align-items: flex-start;
 }
 
-.flex-center{
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
