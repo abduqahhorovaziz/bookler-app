@@ -9,6 +9,9 @@ const tabSection = document.querySelector("#tabSection");
 const tabContainer = document.querySelector("#tabContainer");
 const tabs = document.querySelectorAll("[data-tab-value]");
 const tabInfos = document.querySelectorAll("[data-tab-info]");
+const specialContainer = document.querySelector('#specialContainer');
+const tableContainer = document.querySelector('#tableContainer');
+
 
 
 toggleBtn.onclick = function () {
@@ -38,9 +41,11 @@ toggleBtn.onclick = function () {
     item.classList.toggle("mr-[13px]");
   });
 
-  // tabSection.classList.toggle('max-w-[1400px]')
   tabContainer.classList.toggle("max-w-[1030px]");
   tabContainer.classList.toggle("max-w-[95%]");
+  specialContainer.classList.toggle("max-w-[90%]");
+  specialContainer.classList.toggle("max-w-[1000px]");
+  tableContainer.classList.toggle("max-w-[94%]");
 };
 
 tabs.forEach((tab) => {
@@ -122,3 +127,15 @@ window.onscroll = function() {
     })
   }
 }
+
+let splide = new Splide( '.splide', {
+  type: 'loop',
+  perPage: 3,
+  perMove: 1,
+  fixedWidth: '462px',
+  arrows: false,
+  gap:'30px',
+} );
+
+splide.mount();
+
