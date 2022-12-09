@@ -728,10 +728,6 @@ video {
   margin-bottom: 18px;
 }
 
-.mr-\[\] {
-  margin-right: ;
-}
-
 .block {
   display: block;
 }
@@ -914,10 +910,6 @@ video {
 
 .w-\[46px\] {
   width: 46px;
-}
-
-.w-\[462px\!important\] {
-  width: 462px !important;
 }
 
 .max-w-\[1400px\] {
